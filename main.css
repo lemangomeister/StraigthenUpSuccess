@@ -1,0 +1,34 @@
+@import url(reset.css);
+@import url(vars.css);
+
+body {
+    background-color: var(--background-color);
+}
+
+details > summary > h3 {
+    display: inline;
+}
+
+details > picture > img{
+    display: inline-block;
+    width: 90%;
+}
+
+section > h3 {
+    font-size : var(--subheading-size);
+}
+
+main > * {
+    width : 80vw;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size : var(--text-size);
+}
+
+picture > caption{
+    display : block;
+}
