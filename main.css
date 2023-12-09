@@ -102,9 +102,11 @@ section#references{
             margin: 2dvh;
             a {
                 color : var(--triton-green);
+                text-decoration: none;
             }
             a:hover {
                 color : var(--triton-magenta);
+                text-decoration: underline;
             }
         }
     }
