@@ -1,12 +1,25 @@
 @import url(reset.css);
 @import url(vars.css);
 
+@keyframes group-name-animation {
+    0% {color: var(--triton-blue, #747678);}
+    33% {color: var(--triton-magenta, yellow);}
+    66% {color: var(--triton-green, blue);}
+}
+
 body {
     background-color: var(--background-color);
+    font-family: 'Avantgarde','Gill sans', sans-serif;
+}
+
+details {
+    margin-top: auto;
+    margin-bottom : auto;
 }
 
 details > summary > h3 {
     display: inline;
+    font-size : 1.5rem;
 }
 
 details > picture > img{
@@ -14,9 +27,65 @@ details > picture > img{
     width: 90%;
 }
 
+h1 {
+    animation-name: group-name-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color : var(--triton-blue);
+    font-size: 2.5rem;
+}
+
+h3#demo-video:hover{
+    color : var(--triton-green);
+}
+
+h3#demo-video{
+    color : var(--triton-blue);
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 90%;
+}
+
+main > picture#thumbs-up > img{
+    display: inline-block;
+    width: 90%;
+}
+
 main > picture > img{
     display: inline-block;
     width: 30%;
+}
+
+nav {
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        
+        li {
+            
+            margin-left: auto;
+            margin-right: auto;
+            font-size: var(--subheading-size);
+            color: var(--triton-blue);
+
+            a {
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            a.active {
+                text-decoration: none;
+                color : var(--triton-navy);
+            }
+        }
+    }
 }
 
 section > h3 {
@@ -31,6 +100,12 @@ section#references{
 
         li {
             margin: 2dvh;
+            a {
+                color : var(--triton-green);
+            }
+            a:hover {
+                color : var(--triton-magenta);
+            }
         }
     }
 }
