@@ -35,6 +35,16 @@ h1 {
     font-size: 2.5rem;
 }
 
+h3 {
+    a {
+        text-decoration: none;
+    }
+
+    a:hover{
+        color : var(--triton-blue);
+    }
+}
+
 h3#demo-video:hover{
     color : var(--triton-green);
 }
